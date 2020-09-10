@@ -5,7 +5,7 @@ const elements = {
 
 // Prompt to select media stream, pass to video element, then play
 async function selectMediaStream() {
-  const { video, button } = elements;
+  const { video } = elements;
   try {
     const mediaStream = await navigator.mediaDevices.getDisplayMedia();
     video.srcObject = mediaStream;
